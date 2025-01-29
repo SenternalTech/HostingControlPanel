@@ -1,0 +1,31 @@
+/*
+ * Senternal Hosting Control Panel
+ * (c) Senternal LLC <http://www.senternal.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+.table {
+    th {
+        font-weight: $font-weight-bold;
+    }
+}
+
+.table-dark > :not(:last-child) > :last-child > * {
+    border-bottom-color: $table-dark-border-color;
+}
+
+.table-bordered {
+    border: $table-border-width solid $table-border-color;
+}
+
+.table-nowrap {
+    th, td {
+        white-space: nowrap;
+    }
+}
+
+.table > :not(:first-child) {
+    border-top: 0;
+}

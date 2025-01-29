@@ -1,0 +1,9 @@
+// bootstrap-scss-docs-start clearfix
+@mixin clearfix() {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+// bootstrap-scss-docs-end clearfix

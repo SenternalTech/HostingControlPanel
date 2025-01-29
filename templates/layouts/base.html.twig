@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>{% block title %}Welcome{% endblock %} | Senternal Hosting Control Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Hosting Control Panel" name="description"/>
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    {{ encore_entry_script_tags('app') }}
+    {% block javascripts %}
+    {% endblock %}
+
+</head>
+
+<body data-sidebar="dark">
+{% block body %}
+    <div id="layout-wrapper">
+        {% include 'layouts/_topbar.html.twig' %}
+        {% include 'layouts/_sidebar.html.twig' %}
+        <div class="main-content">
+            <div class="page-content">
+                <div class="container-fluid">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>document.write(new Date().getFullYear())</script>
+                            © Senternal LLC.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Senternal Hosting Control Panel
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

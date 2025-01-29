@@ -1,0 +1,118 @@
+<div class="vertical-menu">
+    <div data-simplebar class="h-100">
+        <div id="sidebar-menu">
+            <ul class="metismenu list-unstyled" id="side-menu">
+                <li class="menu-title" key="t-menu">Menu</li>
+                <li>
+                    <a href="/" class="waves-effect">
+                        <i class="bx bx-home-circle"></i>
+                        <span key="t-dashboards">Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-user-circle"></i>
+                        <span key="t-serverconfig">Manage Server</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{ path('server_networking') }}" key="t-server-networking" class="waves-effect">Networking</a>
+                        </li>
+                        <li><a href="{{ path('server_status') }}" key="t-server-status" class="waves-effect">Server
+                                Status</a></li>
+                        <li><a href="{{ path('server_reboot') }}" key="t-server-reboot" class="waves-effect">Reboot
+                                Server</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-title" key="t-pages">Service Configuration</li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-globe"></i>
+                        <span key="t-domainsmanager">Domains Manager</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bxs-compass"></i>
+                        <span key="t-dnsmanager">DNS Manager</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{ path('dns_zone_manager') }}" key="t-dns_zone_manager">DNS Zone Manager</a></li>
+                        <li><a href="{{ path('dns_add_zone') }}" key="t-dns_add_zone">Add a DNS Zone</a></li>
+                        <li><a href="{{ path('dns_delete_zone') }}" key="t-dns_delete_zone">Delete a DNS Zone</a></li>
+                        <li><a href="{{ path('dns_add_host_entry') }}" key="t-dns_add_host_entry">Add an A Entry for
+                                Your Hostname</a></li>
+                        <li><a href="{{ path('dns_edit_zone_template') }}" key="t-dns_edit_zone_template">Edit Zone
+                                Templates</a></li>
+                        <li><a href="{{ path('dns_mx_record_manager') }}" key="t-dns_mx_record_manager">Email DNS Record
+                                Manager</a></li>
+                        <li><a href="{{ path('dns_routing_configuration') }}" key="t-dns_routing_configuration">Email
+                                Routing Configuration</a></li>
+                        <li><a href="{{ path('dns_global_dmarc') }}" key="t-dns_global_dmarc">Enable DMARC Globally</a>
+                        </li>
+                        <li><a href="{{ path('dns_global_dkim') }}" key="t-dns_global_dkim">Enable DKIM/SPF Globally</a>
+                        </li>
+                        <li><a href="{{ path('dns_ns_record_report') }}" key="t-dns_ns_record_report">Nameserver Record
+                                Report</a></li>
+                        <li><a href="{{ path('dns_park_domain') }}" key="t-dns_park_domain">Park a Domain</a></li>
+                        <li><a href="{{ path('dns_cleanup') }}" key="t-dns_cleanup">Perform a DNS Cleanup</a></li>
+                        <li><a href="{{ path('dns_set_zone_ttl') }}" key="t-dns_set_zone_ttl">Set Zone TTL</a></li>
+                        <li><a href="{{ path('dns_domain_forwarding') }}" key="t-dns_domain_forwarding">Setup/Edit
+                                Domain Forwarding</a></li>
+                        <li><a href="{{ path('dns_sync_records') }}" key="t-dns_sync_records">Synchronize DNS
+                                Records</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-rewind-circle"></i>
+                        <span key="t-backup">Backup</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-envelope"></i>
+                        <span key="t-email">Email</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-data"></i>
+                        <span key="t-database">Database</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{ path('database_root_password') }}" key="t-database_root_password">Change Root
+                                Password</a></li>
+                        <li><a href="{{ path('database_user_password') }}" key="t-database_user_password">Change User
+                                Password</a></li>
+                        <li><a href="{{ path('database_user_list') }}" key="t-database_user_list">Manage Users</a></li>
+                        <li><a href="{{ path('database_map_tool') }}" key="t-database_map_tool">Map Tool</a></li>
+                        <li><a href="{{ path('database_configuration') }}" key="t-database_configuration">Edit
+                                Configuration</a></li>
+                        <li><a href="{{ path('database_access_hosts') }}" key="t-database_access_hosts">Manage Access
+                                Hosts</a></li>
+                        <li><a href="{{ path('database_list') }}" key="t-database_list">Manage Databases</a></li>
+                        <li><a href="{{ path('database_phpMyAdmin') }}" key="t-database_phpMyAdmin">phpMyAdmin</a></li>
+                        <li><a href="{{ path('database_repair') }}" key="t-database_repair">Repair Databases</a></li>
+                        <li><a href="{{ path('database_processes') }}" key="t-database_processes">Show Processes</a>
+                        </li>
+                        <li><a href="{{ path('database_upgrade') }}" key="t-database_upgrade">Upgrade Version</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-user-circle"></i>
+                        <span key="t-accountmanager">Account Manager</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
