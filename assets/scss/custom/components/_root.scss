@@ -1,0 +1,23 @@
+/*
+ * Senternal Hosting Control Panel
+ * (c) Senternal LLC <http://www.senternal.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+:root {
+    --#{$prefix}header-bg: #{$header-bg};
+    --#{$prefix}header-item-color: #{$header-item-color};
+    --#{$prefix}header-dark-bg: #{$header-dark-bg};
+    --#{$prefix}header-dark-item-color: #{$header-dark-item-color};
+    --#{$prefix}topbar-search-bg: #{$topbar-search-bg};
+    --#{$prefix}footer-bg: #{$footer-bg};
+    --#{$prefix}footer-color: #{$footer-color};
+    --#{$prefix}topnav-bg: #{$topnav-bg};
+    --#{$prefix}menu-item-color: #{$menu-item-color};
+    --#{$prefix}menu-item-active-color: #{$menu-item-active-color};
+    --#{$prefix}boxed-body-bg: #{$boxed-body-bg};
+    --#{$prefix}display-none: #{$display-none};
+    --#{$prefix}display-block: #{$display-block};
+}

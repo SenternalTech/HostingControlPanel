@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>{% block title %}Login{% endblock %} | Senternal Hosting Control Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Hosting Control Panel" name="description"/>
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    {{ encore_entry_script_tags('app') }}
+    {% block javascripts %}
+    {% endblock %}
+
+</head>
+
+<body>
+{% block body %}
+    {% block content %}{% endblock %}
+{% endblock %}
+</body>
+</html>
